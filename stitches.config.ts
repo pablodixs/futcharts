@@ -20,7 +20,7 @@ export const {
       gray100: '#F2F2F2',
     },
     transitions: {
-      defaultTransition: 'all 0.3s cubic-bezier(0,.5,.58,1)'
+      defaultTransition: 'all 250ms cubic-bezier(0,.5,.58,1)'
     }
   },
   media: {

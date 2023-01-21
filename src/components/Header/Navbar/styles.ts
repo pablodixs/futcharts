@@ -5,6 +5,7 @@ export const NavbarContainer = styled('nav', {
     listStyle: 'none',
     display: 'flex',
     gap: '4rem',
+    fontWeight: '500',
 
     '&:hover a:not(:hover)': {
       opacity: 0.5,

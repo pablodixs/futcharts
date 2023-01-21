@@ -15,6 +15,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+        <meta name="theme-color" content="#0019A9" />
       </Head>
       <body>
         <Main />
