@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { getCssText } from 'stitches.config'
 
 export default function Document() {
   return (
@@ -16,6 +17,10 @@ export default function Document() {
         />
         <link rel="icon" type="image/x-icon" href="/favicon.svg" />
         <meta name="theme-color" content="#0019A9" />
+        <style
+          id="stitches"
+          dangerouslySetInnerHTML={{ __html: getCssText() }}
+        />
       </Head>
       <body>
         <Main />

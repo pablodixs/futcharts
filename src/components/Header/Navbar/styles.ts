@@ -20,7 +20,7 @@ export const NavbarContainer = styled('nav', {
         display: 'block',
         width: 0,
         height: '2px',
-        backgroundColor: '$blue100',
+        backgroundColor: '$blue200',
         position: 'absolute',
         bottom: '-0.25rem',
         left: 0,
@@ -37,4 +37,8 @@ export const NavbarContainer = styled('nav', {
       },
     },
   },
+
+  '@bp1': {
+    display: 'none'
+  }
 })

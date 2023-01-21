@@ -7,12 +7,22 @@ export const globalStyle = globalCss({
     padding: 0,
     boxSizing: 'border-box',
     '-webkit-font-smoothing': 'antialiased',
-    textRendering: 'geometricPrecision'
+    textRendering: 'geometricPrecision',
+  },
+
+  html: {
+    scrollBehavior: 'smooth',
   },
 
   body: {
     fontFamily: 'Lexend, sans-serif',
-    color: '$black800'
+    color: '$black800',
+    overflowX: 'hidden',
+    overflowY: 'scroll',
+
+    '@bp1': {
+      fontSize: '14px',
+    },
   },
 
   a: {
@@ -24,7 +34,7 @@ export const globalStyle = globalCss({
     fontFamily: 'inherit',
     color: 'inherit',
     fontSize: 'inherit',
-  }
+  },
 })
 
 export const Input = styled('input', {
@@ -32,7 +42,7 @@ export const Input = styled('input', {
   border: 'none',
   outline: 'none',
   padding: '0.25rem 0',
-  borderBottom: '2px solid $blue100',
+  borderBottom: '2px solid $blue200',
   flex: 1,
   transition: '$defaultTransition',
 
@@ -43,27 +53,27 @@ export const Input = styled('input', {
 
   '&:focus': {
     borderBottom: '2px solid #fff',
-  }
+  },
 })
 
 export const LinkContainer = styled(Link, {
-    position: 'relative',
+  position: 'relative',
+  transition: '$defaultTransition',
+
+  '&:before': {
+    content: '',
+    display: 'block',
+    width: 0,
+    height: '2px',
+    backgroundColor: '$blue100',
+    position: 'absolute',
+    bottom: '-0.25rem',
+    left: 0,
+    right: 0,
     transition: '$defaultTransition',
+  },
 
-    '&:before': {
-      content: '',
-      display: 'block',
-      width: 0,
-      height: '2px',
-      backgroundColor: '$blue100',
-      position: 'absolute',
-      bottom: '-0.25rem',
-      left: 0,
-      right: 0,
-      transition: '$defaultTransition',
-    },
-
-    '&:hover::before': {
-      width: '100%',
-    },
+  '&:hover::before': {
+    width: '100%',
+  },
 })

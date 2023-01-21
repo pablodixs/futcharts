@@ -12,7 +12,8 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      blue100: '#6675CB',
+      blue100: '#CDD1EB',
+      blue200: '#6675CB',
       blue500: '#0019A9',
       blue900: '#001276',
       black800: '#242424',
@@ -24,7 +25,7 @@ export const {
     }
   },
   media: {
-    bp1: '(min-width: 480px)',
+    bp1: '(max-width: 480px)',
   },
   utils: {
     marginX: (value: number) => ({ marginLeft: value, marginRight: value }),
