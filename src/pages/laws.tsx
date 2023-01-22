@@ -1,4 +1,6 @@
 import { Header } from '@/components/Header'
+import { motion } from 'framer-motion'
+
 import {
   Heading,
   HeroContainer,
@@ -6,9 +8,7 @@ import {
   CalloutContainer,
 } from '@/styles/pages/laws'
 import Head from 'next/head'
-import { motion } from 'framer-motion'
-import { SimpleButton } from '@/components/Buttons/SimpleButtom'
-import { LinkContainer } from '@/styles/global'
+import Image from 'next/image'
 
 export default function LawsPage() {
   return (
@@ -33,7 +33,7 @@ export default function LawsPage() {
           <motion.svg
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ bounce: 0, type: 'spring', duration: 0.5 }}
             width="400"
             height="300"
@@ -65,15 +65,11 @@ export default function LawsPage() {
       </HeroContainer>
       <BodyContainer>
         <CalloutContainer>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Cbf-logo-selecao-logo-brasil-4.png/621px-Cbf-logo-selecao-logo-brasil-4.png"
-            alt="Logo da CBF"
-          />
           <div>
             <p>
-              Todas as informações são retiradas do manual &ldquo;Regras do Futebol
-              2019/20&ldquo; da Confederação Brasileira de Futebol autorizada pela
-              International Football Association Board.
+              Todas as informações são retiradas do manual &ldquo;Regras do
+              Futebol 2019/20&ldquo; da Confederação Brasileira de Futebol
+              autorizada pela International Football Association Board.
             </p>
             <strong>
               Todos os direitos são reservados à Confederação Brasileira de
@@ -86,23 +82,117 @@ export default function LawsPage() {
           O futebol é o esporte mais popular do planeta. Ele é jogado em todos
           os países nos mais diferentes níveis. As Regras do Jogo são as mesmas
           praticadas pelo mundo afora, desde a final da Copa do Mundo FIFA até
-          uma partida entre crianças em um pequeno vilarejo. O fato de as mesmas
-          Regras serem aplicadas nas partidas de todas as confederações, países,
-          cidades e vilas ao redor do mundo é um forte fator para que a unidade
-          das regras seja preservada. É também uma oportunidade que deve ser
-          aproveitada para o bem do futebol em todos os lugares. O futebol deve
-          ser praticado com base em Regras que propiciem o jogo limpo (Fair
-          Play), pois um pilar crucial da beleza do &ldquo;jogo bonito&ldquo; é a sua
-          legitimidade – esta é uma característica vital do &ldquo;espírito&ldquo; do jogo.
-          Os melhores jogos são aqueles em que o árbitro é raramente
-          requisitado, bem como aquele em que os jogadores o disputam sempre com
-          respeito aos demais jogadores, aos árbitros e às Regras. A integridade
-          das Regras e dos árbitros que as aplicam, deve sempre ser protegida e
-          respeitada. Todos aqueles que possuem alguma autoridade, especialmente
-          treinadores e os capitães das equipes, devem ter a clara
-          responsabilidade durante a partida de respeitar os árbitros bem como
-          suas decisões.
+          uma partida entre crianças em um pequeno vilarejo.
         </p>
+        <p>
+          O fato de as mesmas Regras serem aplicadas nas partidas de todas as
+          confederações, países, cidades e vilas ao redor do mundo é um forte
+          fator para que a unidade das regras seja preservada. É também uma
+          oportunidade que deve ser aproveitada para o bem do futebol em todos
+          os lugares.
+        </p>
+        <p>
+          O futebol deve ser praticado com base em Regras que propiciem o jogo
+          limpo (Fair Play), pois um pilar crucial da beleza do &ldquo;jogo
+          bonito&ldquo; é a sua legitimidade – esta é uma característica vital
+          do &ldquo;espírito&ldquo; do jogo. Os melhores jogos são aqueles em
+          que o árbitro é raramente requisitado, bem como aquele em que os
+          jogadores o disputam sempre com respeito aos demais jogadores, aos
+          árbitros e às Regras.
+        </p>
+        <p>
+          A integridade das Regras e dos árbitros que as aplicam, deve sempre
+          ser protegida e respeitada. Todos aqueles que possuem alguma
+          autoridade, especialmente treinadores e os capitães das equipes, devem
+          ter a clara responsabilidade durante a partida de respeitar os
+          árbitros bem como suas decisões.
+        </p>
+        <motion.figure
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ bounce: 0, type: 'spring', delay: 0.3 }}
+        >
+          <Image
+            src={'/laws-hero.png'}
+            quality={100}
+            width={1200}
+            height={450}
+            alt=""
+            placeholder="blur"
+            blurDataURL={'/laws-hero.png'}
+          />
+          <figcaption>
+            Foto de{' '}
+            <a href="https://unsplash.com/@piensaenpixel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Emilio Garcia
+            </a>{' '}
+            na{' '}
+            <a href="https://unsplash.com/pt-br/fotografias/AWdCgDDedH0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </figcaption>
+        </motion.figure>
+        <p>
+          O futebol deve ser agradável e prazeroso para os jogadores, árbitros,
+          treinadores, bem como para os espectadores, fãs, administradores etc.
+          As Regras devem garantir isso para que as pessoas, independente de
+          idade, raça, religião, cultura, etnia, gênero, orientação sexual,
+          condição especial ou qualquer outra diferença, queiram participar e se
+          envolver com o futebol.
+        </p>
+        <p>
+          As Regras do Jogo são relativamente simples, comparadas a outros
+          esportes, mas como não é possível prever todas as situações, pode ser
+          que muitas delas, porque são subjetivas, gerem debate e discussão.
+        </p>
+        <motion.figure
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ bounce: 0, type: 'spring', delay: 0.3 }}
+        >
+          <Image
+            src={'/pitch.png'}
+            quality={100}
+            width={1200}
+            height={450}
+            alt=""
+            placeholder="blur"
+            blurDataURL={'/pitch.png'}
+          />
+          <figcaption>
+            Foto de{' '}
+            <a href="https://unsplash.com/@timtanzy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Timothy Tan
+            </a>{' '}
+            na{' '}
+            <a href="https://unsplash.com/pt-br/fotografias/PAe2UhGo-S4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </figcaption>
+          <Heading type={'topics'}>Regra 01</Heading>
+          <ol>
+            <li>Superfície do campo</li>
+            <p>
+              O campo de jogo deve ser de superfície totalmente natural ou, se o
+              regulamento da competição permitir, de superfície totalmente
+              artificial. Também, se o regulamento da competição permitir, o
+              campo de jogo pode ser totalmente natural e artificial – sistema
+              híbrido (Não pode haver uma zona do campo com grama natural e
+              outra com grama artificial).
+            </p>
+            <p>A cor das superfícies artificiais deve ser verde.</p>
+            <p>
+              Quando se utilizem superfícies artificiais em jogos de competição
+              entre equipes representativas de federações nacionais de futebol
+              filiadas na FIFA, ou em jogos internacionais de competições de
+              clubes, a superfície deve cumprir os requisitos do Programa de
+              qualidade da FIFA para gramas artificiais ou do International
+              Match Standard, salvo se a IFAB conceder uma autorização especial.
+            </p>
+          </ol>
+        </motion.figure>
       </BodyContainer>
     </>
   )

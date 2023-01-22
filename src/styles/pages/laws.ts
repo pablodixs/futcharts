@@ -32,10 +32,22 @@ export const Heading = styled('h1', {
     type: {
       topics: {
         color: '$blue500',
-        fontSize: '3rem',
-        marginBottom: '1rem',
-        fontWeight: '900',
-        letterSpacing: '-5px',
+        fontSize: '2.5rem',
+        marginBottom: '2rem',
+        fontWeight: '600',
+        letterSpacing: '-1px',
+        position: 'relative',
+        fontFamily: 'Lexend, sans-serif',
+        textTransform: 'none',
+
+        '&:before': {
+          content: '',
+          width: '10%',
+          height: '5px',
+          backgroundColor: '$blue200',
+          position: 'absolute',
+          bottom: '-0.75rem',
+        },
       },
     },
   },
@@ -43,17 +55,47 @@ export const Heading = styled('h1', {
 
 export const BodyContainer = styled(DefaultContainer, {
   padding: '2rem',
+  maxWidth: '1200px',
+
+  img: {
+    width: '100%',
+    height: '500px',
+    objectFit: 'cover'
+  },
 
   p: {
-    lineHeight: '1.5',
+    lineHeight: '1.75',
     fontSize: '1rem',
+    fontWeight: '400',
+    color: '#000',
+    marginBottom: '1.5rem'
   },
-})
 
+  a: {
+    fontWeight: '500',
+    color: '$blue500',
+  },
+
+  figcaption: {
+    fontWeight: '400',
+    fontSize: '0.75rem',
+    padding: '0.5rem 0',
+    color: '$black100',
+    marginBottom: '1.5rem',
+    borderBottom: '1px solid $blue100'
+  },
+
+  li: {
+    fontWeight: '600',
+    fontSize: '1.125rem',
+    marginBottom: '0.7rem',
+    color: '$blue900'
+  }
+})
 
 export const CalloutContainer = styled('div', {
   padding: '2rem',
-  border: '2px solid $blue500',
+  border: '2px solid $blue100',
   marginBottom: '2rem',
   display: 'flex',
   gap: '2rem',
@@ -62,11 +104,12 @@ export const CalloutContainer = styled('div', {
   p: {
     '&:first-child': {
       marginBottom: '1rem',
-    }
+    },
   },
 
   img: {
     width: '3rem',
-    objectFit: 'contain'
-  }
+    height: 'auto',
+    objectFit: 'contain',
+  },
 })

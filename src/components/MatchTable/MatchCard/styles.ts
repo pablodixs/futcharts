@@ -27,6 +27,10 @@ export const GameCardContainer = styled('a', {
       alignItems: 'center',
       fontSize: '0.875rem',
       flex: 1,
+
+      img: {
+        objectFit: 'contain'
+      }
     },
 
     section: {

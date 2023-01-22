@@ -25,14 +25,30 @@ export function GameCard({
       </header>
       <main>
         <div>
-          <Image quality={100} src={homeTeamLogo} alt="" width={36} height={36} />
+          <Image
+            quality={100}
+            src={homeTeamLogo}
+            placeholder={'blur'}
+            blurDataURL={homeTeamLogo}
+            alt=""
+            width={36}
+            height={36}
+          />
           <span>{homeTeam}</span>
         </div>
         <section>
           <span>{horario}</span>
         </section>
         <div>
-          <Image quality={100} src={visitorTeamLogo} alt="" width={36} height={36} />
+          <Image
+            quality={100}
+            src={visitorTeamLogo}
+            blurDataURL={visitorTeamLogo}
+            placeholder={'blur'}
+            alt=""
+            width={36}
+            height={36}
+          />
           <span>{visitorTeam}</span>
         </div>
       </main>

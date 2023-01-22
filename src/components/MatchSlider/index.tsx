@@ -12,7 +12,18 @@ export function MatchSlider() {
   const [ref, instanceRef] = useKeenSlider<HTMLDivElement>({
     slides: {
       perView: 3,
-      spacing: 16,
+      // spacing: 16,
+    },
+    breakpoints: {
+      "(min-width: 400px)": {
+        slides: { perView: 1, spacing: 5 },
+      },
+      "(min-width: 900px)": {
+        slides: { perView: 2, spacing: 8 },
+      },
+      "(min-width: 1000px)": {
+        slides: { perView: 3, spacing: 16 },
+      },
     },
   })
 

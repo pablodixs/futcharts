@@ -3,17 +3,19 @@ import { motion } from 'framer-motion'
 
 import { SliderContainer } from './styles'
 
+import heroImage from '../../assets/heroimage.webp'
+
 export function MainSlider() {
   return (
     <SliderContainer href="#">
       <Image
         quality={100}
-        src={
-          'https://resources.premierleague.com/photos/premierleague/photo/2023/01/21/50f39f77-6d8b-45c9-94d6-dee9bfb6a8ad/1458202075.jpg?width=1350&height=759'
-        }
+        src={heroImage}
         alt=""
         width={910}
         height={145}
+        placeholder={'blur'}
+        // blurDataURL={heroImage}
       />
       <motion.div
         initial={{ opacity: 0, y: 15 }}
