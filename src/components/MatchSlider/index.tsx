@@ -48,7 +48,7 @@ export function MatchSlider() {
       <SliderContainer ref={ref} className="keen-slider">
         {brasileirao.map((match: MatchProps, index) => {
           return (
-            <div className={`keen-slider__slide number-slide${index}`}>
+            <div key={index} className={`keen-slider__slide number-slide${index}`}>
               <MatchCard data={match} />
             </div>
           )
