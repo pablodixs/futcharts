@@ -71,8 +71,8 @@ export default function LawsPage() {
           />
           <div>
             <p>
-              Todas as informações são retiradas do manual "Regras do Futebol
-              2019/20" da Confederação Brasileira de Futebol autorizada pela
+              Todas as informações são retiradas do manual &ldquo;Regras do Futebol
+              2019/20&ldquo; da Confederação Brasileira de Futebol autorizada pela
               International Football Association Board.
             </p>
             <strong>
@@ -92,8 +92,8 @@ export default function LawsPage() {
           das regras seja preservada. É também uma oportunidade que deve ser
           aproveitada para o bem do futebol em todos os lugares. O futebol deve
           ser praticado com base em Regras que propiciem o jogo limpo (Fair
-          Play), pois um pilar crucial da beleza do “jogo bonito” é a sua
-          legitimidade – esta é uma característica vital do “espírito” do jogo.
+          Play), pois um pilar crucial da beleza do &ldquo;jogo bonito&ldquo; é a sua
+          legitimidade – esta é uma característica vital do &ldquo;espírito&ldquo; do jogo.
           Os melhores jogos são aqueles em que o árbitro é raramente
           requisitado, bem como aquele em que os jogadores o disputam sempre com
           respeito aos demais jogadores, aos árbitros e às Regras. A integridade
