@@ -54,7 +54,6 @@ export const SliderContainer = styled('a', {
     },
 
     '&:hover': {
-      transform: 'translateY(-0.5rem)',
       backgroundColor: '$blue900'
     },
   },

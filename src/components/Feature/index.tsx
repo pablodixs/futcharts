@@ -29,7 +29,7 @@ export function Feature() {
         />
         <motion.div initial={{ x: 100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       transition={{ bounce: 0, type: 'spring', duration: 0.5, delay: 0.4 }}>
           <LastButton>
             <span>

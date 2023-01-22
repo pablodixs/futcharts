@@ -19,6 +19,7 @@ export const globalStyle = globalCss({
     color: '$black800',
     overflowX: 'hidden',
     overflowY: 'scroll',
+    minHeight: '100vh',
 
     '@bp1': {
       fontSize: '14px',
@@ -27,7 +28,7 @@ export const globalStyle = globalCss({
 
   a: {
     color: 'inherit',
-    textDecoration: 'none',
+    textDecoration: 'inherit',
   },
 
   'input, button, select, textarea': {
@@ -65,7 +66,7 @@ export const LinkContainer = styled(Link, {
     display: 'block',
     width: 0,
     height: '2px',
-    backgroundColor: '$blue100',
+    backgroundColor: '$blue200',
     position: 'absolute',
     bottom: '-0.25rem',
     left: 0,
@@ -76,4 +77,10 @@ export const LinkContainer = styled(Link, {
   '&:hover::before': {
     width: '100%',
   },
+})
+
+export const DefaultContainer = styled('section', {
+  maxWidth: '1280px',
+  width: '100%',
+  margin: '0 auto',
 })

@@ -1,7 +1,14 @@
 import { Header } from '@/components/Header'
-import { Heading, HeroContainer } from '@/styles/pages/laws'
+import {
+  Heading,
+  HeroContainer,
+  BodyContainer,
+  CalloutContainer,
+} from '@/styles/pages/laws'
 import Head from 'next/head'
 import { motion } from 'framer-motion'
+import { SimpleButton } from '@/components/Buttons/SimpleButtom'
+import { LinkContainer } from '@/styles/global'
 
 export default function LawsPage() {
   return (
@@ -15,7 +22,7 @@ export default function LawsPage() {
           <motion.section
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             transition={{ bounce: 0, type: 'spring', duration: 0.5 }}
           >
             <Heading>
@@ -56,26 +63,47 @@ export default function LawsPage() {
           </motion.svg>
         </div>
       </HeroContainer>
-      <p>
-        O futebol é o esporte mais popular do planeta. Ele é jogado em todos os
-        países nos mais diferentes níveis. As Regras do Jogo são as mesmas
-        praticadas pelo mundo afora, desde a final da Copa do Mundo FIFA até uma
-        partida entre crianças em um pequeno vilarejo. O fato de as mesmas
-        Regras serem aplicadas nas partidas de todas as confederações, países,
-        cidades e vilas ao redor do mundo é um forte fator para que a unidade
-        das regras seja preservada. É também uma oportunidade que deve ser
-        aproveitada para o bem do futebol em todos os lugares. O futebol deve
-        ser praticado com base em Regras que propiciem o jogo limpo (Fair Play),
-        pois um pilar crucial da beleza do “jogo bonito” é a sua legitimidade –
-        esta é uma característica vital do “espírito” do jogo. Os melhores jogos
-        são aqueles em que o árbitro é raramente requisitado, bem como aquele em
-        que os jogadores o disputam sempre com respeito aos demais jogadores,
-        aos árbitros e às Regras. A integridade das Regras e dos árbitros que as
-        aplicam, deve sempre ser protegida e respeitada. Todos aqueles que
-        possuem alguma autoridade, especialmente treinadores e os capitães das
-        equipes, devem ter a clara responsabilidade durante a partida de
-        respeitar os árbitros bem como suas decisões.
-      </p>
+      <BodyContainer>
+        <CalloutContainer>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Cbf-logo-selecao-logo-brasil-4.png/621px-Cbf-logo-selecao-logo-brasil-4.png"
+            alt="Logo da CBF"
+          />
+          <div>
+            <p>
+              Todas as informações são retiradas do manual "Regras do Futebol
+              2019/20" da Confederação Brasileira de Futebol autorizada pela
+              International Football Association Board.
+            </p>
+            <strong>
+              Todos os direitos são reservados à Confederação Brasileira de
+              Futebol.
+            </strong>
+          </div>
+        </CalloutContainer>
+        <Heading type={'topics'}>Introdução</Heading>
+        <p>
+          O futebol é o esporte mais popular do planeta. Ele é jogado em todos
+          os países nos mais diferentes níveis. As Regras do Jogo são as mesmas
+          praticadas pelo mundo afora, desde a final da Copa do Mundo FIFA até
+          uma partida entre crianças em um pequeno vilarejo. O fato de as mesmas
+          Regras serem aplicadas nas partidas de todas as confederações, países,
+          cidades e vilas ao redor do mundo é um forte fator para que a unidade
+          das regras seja preservada. É também uma oportunidade que deve ser
+          aproveitada para o bem do futebol em todos os lugares. O futebol deve
+          ser praticado com base em Regras que propiciem o jogo limpo (Fair
+          Play), pois um pilar crucial da beleza do “jogo bonito” é a sua
+          legitimidade – esta é uma característica vital do “espírito” do jogo.
+          Os melhores jogos são aqueles em que o árbitro é raramente
+          requisitado, bem como aquele em que os jogadores o disputam sempre com
+          respeito aos demais jogadores, aos árbitros e às Regras. A integridade
+          das Regras e dos árbitros que as aplicam, deve sempre ser protegida e
+          respeitada. Todos aqueles que possuem alguma autoridade, especialmente
+          treinadores e os capitães das equipes, devem ter a clara
+          responsabilidade durante a partida de respeitar os árbitros bem como
+          suas decisões.
+        </p>
+      </BodyContainer>
     </>
   )
 }

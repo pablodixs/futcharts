@@ -23,7 +23,7 @@ export const MatchCardContainer = styled('main', {
     justifyContent: 'center',
     gap: '0.5rem',
     alignItems: 'center',
-    padding: '1rem',
+    padding: '1rem 0',
 
     div: {
       display: 'flex',
