@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion } from 'framer-motion'
 
 import { Header } from '@/components/Header'
 import { MainSlider } from '@/components/MainSlider'
@@ -20,105 +21,15 @@ export default function Homepage() {
       </HeroContainer>
       <MainContainer>
         <MatchSlider />
-        <Feature />
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sed et
-          quas atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Sit sed et quas
-          atque fugiat eaque? Dolorum labore, quae harum odio excepturi nam
-          aliquam est veritatis. Consequatur sequi doloribus unde debitis.
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ bounce: 0, type: 'spring', duration: 0.4 }}
+        >
+          <Feature />
+          <MatchSlider />
+        </motion.div>
       </MainContainer>
     </>
   )

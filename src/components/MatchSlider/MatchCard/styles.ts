@@ -21,6 +21,7 @@ export const MatchCardContainer = styled('main', {
   main: {
     display: 'flex',
     justifyContent: 'center',
+    gap: '0.5rem',
     alignItems: 'center',
     padding: '1rem',
 
@@ -31,7 +32,8 @@ export const MatchCardContainer = styled('main', {
 
       img: {
         width: '1.75rem',
-        objectFit: 'cover',
+        height: '1.75rem',
+        objectFit: 'contain',
       },
 
       span: {

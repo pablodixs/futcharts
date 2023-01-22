@@ -25,14 +25,14 @@ export function GameCard({
       </header>
       <main>
         <div>
-          <Image src={homeTeamLogo} alt="" width={36} height={36} />
+          <Image quality={100} src={homeTeamLogo} alt="" width={36} height={36} />
           <span>{homeTeam}</span>
         </div>
         <section>
           <span>{horario}</span>
         </section>
         <div>
-          <Image src={visitorTeamLogo} alt="" width={36} height={36} />
+          <Image quality={100} src={visitorTeamLogo} alt="" width={36} height={36} />
           <span>{visitorTeam}</span>
         </div>
       </main>
