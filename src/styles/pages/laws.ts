@@ -55,20 +55,19 @@ export const Heading = styled('h1', {
 
 export const BodyContainer = styled(DefaultContainer, {
   padding: '2rem',
-  maxWidth: '1200px',
+  maxWidth: '1000px',
 
   img: {
     width: '100%',
     height: '500px',
-    objectFit: 'cover'
+    objectFit: 'cover',
   },
 
   p: {
     lineHeight: '1.75',
     fontSize: '1rem',
     fontWeight: '400',
-    color: '#000',
-    marginBottom: '1.5rem'
+    marginBottom: '1.5rem',
   },
 
   a: {
@@ -82,15 +81,15 @@ export const BodyContainer = styled(DefaultContainer, {
     padding: '0.5rem 0',
     color: '$black100',
     marginBottom: '1.5rem',
-    borderBottom: '1px solid $blue100'
+    borderBottom: '1px solid $blue100',
   },
 
   li: {
     fontWeight: '600',
     fontSize: '1.125rem',
     marginBottom: '0.7rem',
-    color: '$blue900'
-  }
+    color: '$blue900',
+  },
 })
 
 export const CalloutContainer = styled('div', {

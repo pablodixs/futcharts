@@ -7,6 +7,10 @@ import { MatchSlider } from '@/components/MatchSlider'
 import { MatchTable } from '@/components/MatchTable'
 import { HeroContainer, MainContainer } from '@/styles/pages/homepage'
 import { Feature } from '@/components/Feature'
+import { brasileirao, championsleague, premierleague } from '@/utils/matches'
+import { NewsCard } from '@/components/NewsCard'
+import { NewsSlider } from '@/components/NewsSilder'
+import { Divider } from '@/styles/global'
 
 export default function Homepage() {
   return (
@@ -20,7 +24,12 @@ export default function Homepage() {
         <MatchTable />
       </HeroContainer>
       <MainContainer>
-        <MatchSlider />
+        <MatchSlider
+          league={brasileirao.league}
+          matches={brasileirao.matches}
+          round={brasileirao.round}
+        />
+        <Divider />
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -28,8 +37,19 @@ export default function Homepage() {
           transition={{ bounce: 0, type: 'spring', duration: 0.4 }}
         >
           <Feature />
-          <MatchSlider />
+          <MatchSlider
+            league={championsleague.league}
+            matches={championsleague.matches}
+            round={championsleague.round}
+          />
         </motion.div>
+        <Divider />
+        <MatchSlider
+          league={premierleague.league}
+          matches={premierleague.matches}
+          round={premierleague.round}
+        />
+        <NewsSlider />
       </MainContainer>
     </>
   )

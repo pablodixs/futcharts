@@ -6,22 +6,21 @@ import { MatchCard } from './MatchCard'
 import { CaretLeft, CaretRight } from 'phosphor-react'
 import { SimpleButton } from '../Buttons/SimpleButtom'
 import { ArrowButton, OptionsContainer } from './MatchCard/styles'
-import { brasileirao, MatchProps } from '@/utils/matches'
+import { LeagueProps, MatchProps } from '@/utils/matches'
 
-export function MatchSlider() {
+export function MatchSlider({ league, matches, round }: LeagueProps) {
   const [ref, instanceRef] = useKeenSlider<HTMLDivElement>({
     slides: {
       perView: 3,
-      // spacing: 16,
     },
     breakpoints: {
-      "(min-width: 400px)": {
+      '(min-width: 400px)': {
         slides: { perView: 1, spacing: 5 },
       },
-      "(min-width: 900px)": {
+      '(min-width: 900px)': {
         slides: { perView: 2, spacing: 8 },
       },
-      "(min-width: 1000px)": {
+      '(min-width: 1000px)': {
         slides: { perView: 3, spacing: 16 },
       },
     },
@@ -31,8 +30,8 @@ export function MatchSlider() {
     <MatchContainer>
       <header>
         <div>
-          <h2>Brasileirão Série A</h2>
-          <span>Rodada 1</span>
+          <h2>{league}</h2>
+          <span>{round}</span>
         </div>
         <OptionsContainer>
           <SimpleButton
@@ -57,7 +56,7 @@ export function MatchSlider() {
         </OptionsContainer>
       </header>
       <SliderContainer ref={ref} className="keen-slider">
-        {brasileirao.map((match: MatchProps, index) => {
+        {matches.map((match: MatchProps, index) => {
           return (
             <div
               key={index}

@@ -15,7 +15,7 @@ export const globalStyle = globalCss({
   },
 
   body: {
-    fontFamily: 'Lexend, sans-serif',
+    fontFamily: 'Lexend, Helvetica, sans-serif',
     color: '$black800',
     overflowX: 'hidden',
     overflowY: 'scroll',
@@ -84,3 +84,8 @@ export const DefaultContainer = styled('section', {
   width: '100%',
   margin: '0 auto',
 })
+
+export const Divider = styled('hr', {
+  margin: '1.5rem 0',
+  border: '1px solid $blue100',
+})  

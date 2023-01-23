@@ -17,7 +17,7 @@ export function MatchCard({ data }: MatchCardProps) {
           <span>{data?.mandante}</span>
           <img src={data?.mandanteLogo} alt="" />
         </div>
-        <Horario>12h</Horario>
+        <Horario>{data?.hora}</Horario>
         <div>
           <img src={data?.visitanteLogo} alt="" />
           <span>{data?.visitante}</span>

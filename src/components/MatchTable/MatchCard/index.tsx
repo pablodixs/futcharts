@@ -28,8 +28,6 @@ export function GameCard({
           <Image
             quality={100}
             src={homeTeamLogo}
-            placeholder={'blur'}
-            blurDataURL={homeTeamLogo}
             alt=""
             width={36}
             height={36}
@@ -43,8 +41,6 @@ export function GameCard({
           <Image
             quality={100}
             src={visitorTeamLogo}
-            blurDataURL={visitorTeamLogo}
-            placeholder={'blur'}
             alt=""
             width={36}
             height={36}

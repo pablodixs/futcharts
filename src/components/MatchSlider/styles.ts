@@ -22,5 +22,6 @@ export const MatchContainer = styled('section', {
 })
 
 export const SliderContainer = styled('div', {
-  padding: '1rem 0'
+  padding: '1rem 0',
+  // marginBottom: '1rem'
 })
