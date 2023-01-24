@@ -14,7 +14,7 @@ export function MatchSlider({ league, matches, round }: LeagueProps) {
       perView: 3,
     },
     breakpoints: {
-      '(min-width: 400px)': {
+      '(max-width: 640px)': {
         slides: { perView: 1, spacing: 5 },
       },
       '(min-width: 900px)': {

@@ -33,7 +33,7 @@ export const Container = styled('section', {
 
     'svg.menu-icon': {
       display: 'block',
-      width: '2rem'
+      width: '1.75rem'
     },
 
     'svg.logo': {

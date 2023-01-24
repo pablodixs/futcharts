@@ -56,6 +56,17 @@ export const SliderContainer = styled('a', {
     '&:hover': {
       backgroundColor: '$blue900'
     },
+
+    '@bp1': {
+      bottom: 0,
+      right: 0,
+      left: 0,
+
+      h1: {
+        fontSize: '1.125rem',
+        fontWeight: '500',
+      },
+    }
   },
 
   '@bp1': {

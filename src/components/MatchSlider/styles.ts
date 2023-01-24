@@ -19,6 +19,16 @@ export const MatchContainer = styled('section', {
       }
     },
   },
+
+  '@bp1': {
+    padding: '0 1rem',
+
+    header: {
+      flexDirection: 'column',
+      alignItems: 'flex-start', 
+      gap: '1rem',
+    }
+  }
 })
 
 export const SliderContainer = styled('div', {

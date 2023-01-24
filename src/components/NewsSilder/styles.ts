@@ -21,6 +21,10 @@ export const ContentContainer = styled('section', {
       bottom: '-0.2rem',
     },
   },
+
+  '@bp1': {
+    padding: '0 1rem'
+  }
 })
 
 export const NewsContainer = styled('div', {
@@ -58,4 +62,15 @@ export const NewsCard = styled('div', {
       boxShadow: '0 0 0 2px #6675CB',
     },
   },
+
+  '@bp1': {
+    width: '100%',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    gap: '1rem',  
+
+    img: {
+      width: '100%',
+    }
+  }
 })
