@@ -20,7 +20,7 @@ export function MainSlider() {
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ bounce: 0, type: 'spring', duration: 0.5, delay: 0.3 }}
       >
         <span>Premier League</span>

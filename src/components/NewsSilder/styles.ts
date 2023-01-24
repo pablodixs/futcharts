@@ -1,11 +1,35 @@
 import { styled } from 'stitches.config'
 
-export const NewsContainer = styled('section', {
+export const ContentContainer = styled('section', {
+  maxWidth: '1280px',
+  width: '100%',
+  margin: '0 auto',
+
+  h4: {
+    fontWeight: '500',
+    color: '$black100',
+    margin: '1.5rem 0 1rem',
+    fontSize: '1.125rem',
+    position: 'relative',
+
+    '&:before': {
+      content: '',
+      width: '3rem',
+      height: '3px',
+      backgroundColor: '$blue100',
+      position: 'absolute',
+      bottom: '-0.2rem',
+    },
+  },
+})
+
+export const NewsContainer = styled('div', {
   display: 'flex',
   alignItems: 'flex-start',
   justifyContent: 'space-between',
+  flexWrap: 'wrap',
 
-    '&:hover div:not(:hover)': {
+  '&:hover div:not(:hover)': {
     opacity: 0.7,
   },
 })

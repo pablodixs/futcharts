@@ -7,10 +7,11 @@ import { MatchSlider } from '@/components/MatchSlider'
 import { MatchTable } from '@/components/MatchTable'
 import { HeroContainer, MainContainer } from '@/styles/pages/homepage'
 import { Feature } from '@/components/Feature'
-import { brasileirao, championsleague, premierleague } from '@/utils/matches'
+import { brasileirao, championsleague, laliga, premierleague } from '@/utils/matches'
 import { NewsCard } from '@/components/NewsCard'
 import { NewsSlider } from '@/components/NewsSilder'
 import { Divider } from '@/styles/global'
+import { laliganews, premiernews } from '@/utils/news'
 
 export default function Homepage() {
   return (
@@ -49,7 +50,14 @@ export default function Homepage() {
           matches={premierleague.matches}
           round={premierleague.round}
         />
-        <NewsSlider />
+        <NewsSlider data={premiernews} />
+        <Divider />
+        <MatchSlider
+          league={laliga.league}
+          matches={laliga.matches}
+          round={laliga.round}
+        />
+        <NewsSlider data={laliganews} />
       </MainContainer>
     </>
   )

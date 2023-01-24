@@ -4,13 +4,14 @@ import { CardContainer } from './styles'
 interface NewsCardProps {
   imageUrl: string
   title: string
+  press: string
 }
 
-export function NewsCardRegular({ imageUrl, title }: NewsCardProps) {
+export function NewsCardRegular({ imageUrl, title, press }: NewsCardProps) {
   return (
       <CardContainer>
         <img src={imageUrl} alt="" />
-        <span>ge.com</span>
+        <span>{press}</span>
         <h3>{title}</h3>
       </CardContainer>
   )
