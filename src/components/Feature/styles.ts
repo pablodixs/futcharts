@@ -23,6 +23,11 @@ export const FeatureContainer = styled('section', {
     gridColumn: '1/-1',
     backgroundColor: '$blue900',
   },
+
+  '@bp1': {
+    display: 'flex',
+    
+  }
 })
 
 export const NewsContainer = styled('div', {
@@ -61,6 +66,19 @@ export const NewsContainer = styled('div', {
     gap: '2rem',
     justifyItems: 'space-between',
   },
+
+  '@bp1': {
+    maxWidth: '400px',
+    display: 'flex',
+    flexDirection: 'column',
+
+    main: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '2rem',
+      justifyItems: 'space-between',
+    }
+  }
 })
 
 export const LastButton = styled('div', {

@@ -7,11 +7,10 @@ export const HeaderContainer = styled('header', {
   width: '100%',
 
   '@bp1': {
-    position: 'fixed',
     top: 0,
     right: 0,
-    left: 0
-  }
+    left: 0,
+  },
 })
 
 export const Container = styled('section', {
@@ -24,10 +23,23 @@ export const Container = styled('section', {
   justifyContent: 'space-between',
   gap: '4rem',
 
+  'svg.menu-icon': {
+    display: 'none',
+  },
+
   '@bp1': {
-    justifyContent: 'center',
-    padding: '1.5rem 0'
-  }
+    justifyContent: 'space-between',
+    padding: '1rem 1rem 5rem',
+
+    'svg.menu-icon': {
+      display: 'block',
+      width: '2rem'
+    },
+
+    'svg.logo': {
+      scale: 0.85,
+    }
+  },
 })
 
 export const SearchBarContainer = styled('div', {
@@ -37,8 +49,8 @@ export const SearchBarContainer = styled('div', {
   position: 'relative',
 
   '@bp1': {
-    display: 'none'
-  }
+    display: 'none',
+  },
 })
 
 export const SearchButton = styled('button', {
@@ -49,8 +61,8 @@ export const SearchButton = styled('button', {
   cursor: 'pointer',
 
   svg: {
-    fontSize: '1.125rem'
-  }
+    fontSize: '1.125rem',
+  },
 })
 
 export const UserContainer = styled('div', {
@@ -59,10 +71,18 @@ export const UserContainer = styled('div', {
   gap: '0.75rem',
 
   strong: {
-    fontWeight: '600'
+    fontWeight: '600',
+  },
+
+  '@bp1': {
+    gap: 0,
+
+    strong: {
+      display: 'none',
+    },
   },
 })
 
 export const Avatar = styled(Image, {
-  borderRadius: '100%'
+  borderRadius: '100%',
 })

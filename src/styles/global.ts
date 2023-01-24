@@ -20,10 +20,6 @@ export const globalStyle = globalCss({
     overflowX: 'hidden',
     overflowY: 'scroll',
     minHeight: '100vh',
-
-    '@bp1': {
-      fontSize: '14px',
-    },
   },
 
   a: {

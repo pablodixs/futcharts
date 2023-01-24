@@ -58,6 +58,10 @@ export const ContentContainer = styled(DefaultContainer, {
           marginBottom: '0.75rem',
         },
       },
+
+      '@bp1': {
+        flexDirection: 'column',
+      }
     },
 
     '&.copy': {

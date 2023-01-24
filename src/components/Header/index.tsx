@@ -1,4 +1,4 @@
-import { MagnifyingGlass } from 'phosphor-react'
+import { List, MagnifyingGlass } from 'phosphor-react'
 import Link from 'next/link'
 
 import { Input, LinkContainer } from '@/styles/global'
@@ -21,6 +21,7 @@ export function Header() {
     <>
       <HeaderContainer>
         <Container>
+          <List className='menu-icon' weight='bold' size={32} />
           <Link href={'/'}>
             <Logo />
           </Link>

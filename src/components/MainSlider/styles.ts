@@ -57,4 +57,20 @@ export const SliderContainer = styled('a', {
       backgroundColor: '$blue900'
     },
   },
+
+  '@bp1': {
+    marginTop: '-5rem',
+
+    img: {
+      width: '100%',
+      height: '415px',
+      objectFit: 'cover',
+      boxShadow: '0 0 0 2px rgba(255, 255, 255, 0.1)',
+      transition: '$defaultTransition',
+  
+      '&:hover': {
+        boxShadow: '0 0 0 5px rgba(255, 255, 255, 0.1)',
+      },
+    },
+  }
 })

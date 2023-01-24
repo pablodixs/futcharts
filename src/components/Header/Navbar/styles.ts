@@ -39,6 +39,6 @@ export const NavbarContainer = styled('nav', {
   },
 
   '@bp1': {
-    display: 'none'
+    display: 'none',
   }
 })

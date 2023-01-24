@@ -21,11 +21,13 @@ export const {
       gray100: '#F2F2F2',
     },
     transitions: {
-      defaultTransition: 'all 250ms cubic-bezier(0,.5,.58,1)'
-    }
+      defaultTransition: 'all 250ms cubic-bezier(0,.5,.58,1)',
+    },
   },
   media: {
-    bp1: '(max-width: 480px)',
+    bp1: '(max-width: 640px)',
+    bp2: '(max-width: 768px)',
+    bp3: '(max-width: 1024px)',
   },
   utils: {
     marginX: (value: number) => ({ marginLeft: value, marginRight: value }),
