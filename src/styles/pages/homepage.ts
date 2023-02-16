@@ -15,3 +15,9 @@ export const MainContainer = styled('main', {
   width: '100%',
   margin: '2rem auto'
 })
+
+export const BackItem = styled('div', {
+  width: '100%',
+  height: '3rem',
+  backgroundColor: '$blue500'
+})

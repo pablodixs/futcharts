@@ -1,14 +1,12 @@
 import Head from 'next/head'
 import { motion } from 'framer-motion'
 
-import { Header } from '@/components/Header'
 import { MainSlider } from '@/components/MainSlider'
 import { MatchSlider } from '@/components/MatchSlider'
 import { MatchTable } from '@/components/MatchTable'
-import { HeroContainer, MainContainer } from '@/styles/pages/homepage'
+import { BackItem, HeroContainer, MainContainer } from '@/styles/pages/homepage'
 import { Feature } from '@/components/Feature'
 import { brasileirao, championsleague, laliga, premierleague } from '@/utils/matches'
-import { NewsCard } from '@/components/NewsCard'
 import { NewsSlider } from '@/components/NewsSilder'
 import { Divider } from '@/styles/global'
 import { laliganews, premiernews } from '@/utils/news'
@@ -19,7 +17,7 @@ export default function Homepage() {
       <Head>
         <title>Futcharts - Apaixonados por futebol</title>
       </Head>
-      <Header />
+      <BackItem />
       <HeroContainer>
         <MainSlider />
         <MatchTable />

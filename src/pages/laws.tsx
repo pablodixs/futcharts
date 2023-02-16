@@ -16,7 +16,6 @@ export default function LawsPage() {
       <Head>
         <title>Regras do Jogo — Futcharts</title>
       </Head>
-      <Header />
       <HeroContainer>
         <div>
           <motion.section

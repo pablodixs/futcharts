@@ -18,7 +18,7 @@ export const Container = styled('section', {
   maxWidth: '1280px',
   width: '100%',
   margin: '0 auto',
-  padding: '2.25rem 0 5rem',
+  padding: '2.25rem 0',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
