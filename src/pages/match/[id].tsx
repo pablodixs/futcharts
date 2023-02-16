@@ -44,12 +44,12 @@ export default function MatchPage() {
             <section>
               <div>
                 <span>Adeyemi</span>
-                <p>63'</p>
+                <p>63&apos;</p>
                 <SoccerBall size={18} />
               </div>
               <div>
                 <span>Adeyemi</span>
-                <p>63'</p>
+                <p>63&apos;</p>
                 <SoccerBall size={18} />
               </div>
             </section>
@@ -61,7 +61,7 @@ export default function MatchPage() {
               <div>
                 <SoccerBall size={18} />
                 <span>Adeyemi</span>
-                <p>63'</p>
+                <p>63&apos;</p>
               </div>
             </section>
           </InfoContainer>
