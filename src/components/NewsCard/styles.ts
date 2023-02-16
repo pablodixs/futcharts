@@ -23,5 +23,14 @@ export const CardContainer = styled('div', {
     img: {
       boxShadow: '0 0 0 2px #6675CB'
     }
-  }
+  },
+
+  '@bp1': {
+    width: '100%',
+    flexDirection: 'column',
+
+    img: {
+      width: '100%',
+    },
+  },
 })

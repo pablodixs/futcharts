@@ -77,6 +77,14 @@ export const MatchCardContainer = styled('main', {
 export const OptionsContainer = styled('div', {
   display: 'flex',
   gap: '0.5rem',
+
+  '@bp1': {
+    width: '100%',
+    a: {
+      flex: 1,
+      justifyContent: 'flex-start'
+    }
+  }
 })
 
 export const ArrowButton = styled('button', {

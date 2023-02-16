@@ -7,6 +7,10 @@ export const FooterContainer = styled('footer', {
   width: '100%',
   color: '#fff',
   borderBottom: '5px solid $blue500',
+
+  '@bp1': {
+    padding: '0 1rem'
+  }
 })
 
 export const ContentContainer = styled(DefaultContainer, {
@@ -58,6 +62,23 @@ export const ContentContainer = styled(DefaultContainer, {
           marginBottom: '0.75rem',
         },
       },
+
+      '@bp1': {
+        flexDirection: 'column',
+        fontSize: '0.875rem',
+
+        '&.menus' : {
+          display: 'grid',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gridTemplateRows: 'repeat(3, auto)',
+          gap: '2rem 1rem',
+          
+          div: {
+            display: 'flex',
+            flexDirection: 'column',
+          }
+        }
+      }
     },
 
     '&.copy': {

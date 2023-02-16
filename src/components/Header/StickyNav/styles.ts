@@ -38,4 +38,8 @@ export const HeaderContainer = styled('div', {
   '&.show': {
     marginTop: '70px',
   },
+
+  '@bp1': {
+    padding: '0 1rem',
+  },
 })

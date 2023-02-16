@@ -34,4 +34,14 @@ export const CardContainer = styled('div', {
       color: '$blue500',
     },
   },
+
+  '@bp1': {
+    width: '100%',
+    flexDirection: 'column',
+    marginBottom: '1.5rem',
+
+    img: {
+      width: '100%',
+    },
+  },
 })

@@ -23,6 +23,15 @@ export const FeatureContainer = styled('section', {
     gridColumn: '1/-1',
     backgroundColor: '$blue900',
   },
+
+  '@bp1': {
+    display: 'flex',
+    flexDirection: 'column',
+
+    '&::after': {
+      height: '95%',
+    },
+  },
 })
 
 export const NewsContainer = styled('div', {
@@ -60,6 +69,20 @@ export const NewsContainer = styled('div', {
     display: 'flex',
     gap: '2rem',
     justifyItems: 'space-between',
+  },
+
+  '@bp1': {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    padding: '1rem',
+
+    main: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '2rem',
+      justifyItems: 'space-between',
+    },
   },
 })
 
