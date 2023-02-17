@@ -1,7 +1,7 @@
-import { styled } from "stitches.config";
+import { styled } from 'stitches.config'
 
 export const Container = styled('div', {
-  backgroundColor: 'rgba(0,18,118,1)'
+  backgroundColor: 'rgba(0,18,118,1)',
 })
 
 export const Main = styled('main', {
@@ -32,8 +32,8 @@ export const HeaderContainer = styled('header', {
 
   span: {
     marginTop: '0.5rem',
-    color: '$blue100'
-  }
+    color: '$blue100',
+  },
 })
 
 export const Badge = styled('span', {
@@ -43,13 +43,23 @@ export const Badge = styled('span', {
   padding: '0.275rem 1rem',
   fontWeight: '500',
   fontSize: '0.875rem',
-  color: '#fff'
+  color: '#fff',
+  textAlign: 'center',
+})
+
+export const LocalSpan = styled('span', {
+  textTransform: 'capitalize',
+  fontSize: '0.75rem',
 })
 
 export const ScorerContainer = styled('div', {
   width: '100%',
   display: 'flex',
   alignItems: 'center',
+
+  '.lose': {
+    opacity: '0.75',
+  },
 
   div: {
     display: 'flex',
@@ -62,22 +72,29 @@ export const ScorerContainer = styled('div', {
 
     '&:first-child': {
       justifyContent: 'flex-end',
-      textAlign: 'right'
+      textAlign: 'right',
     },
 
     '&:nth-child(2)': {
       width: '10rem',
+      height: '3.4375rem',
       margin: '0 2rem',
       padding: '0.275rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      border: '2px solid $blue200'
+      border: '2px solid $blue200',
+      textAlign: 'center',
+
+      span: {
+        fontWeight: '500',
+        fontSize: '20px'
+      }
     },
 
     h1: {
       fontSize: '2.25rem',
-      fontWeight: '600'
+      fontWeight: '600',
     },
 
     h2: {
@@ -85,11 +102,11 @@ export const ScorerContainer = styled('div', {
     },
 
     img: {
-      width: '5rem',
-      height: '5rem',
-      objectFit: 'contain'
-    }
-  }
+      width: '4rem',
+      height: '4rem',
+      objectFit: 'contain',
+    },
+  },
 })
 
 export const InfoContainer = styled('div', {
@@ -101,6 +118,7 @@ export const InfoContainer = styled('div', {
     display: 'flex',
     gap: '0.5rem',
     flexDirection: 'column',
+    textAlign: 'center',
 
     '&:not(:nth-child(2))': {
       width: '50%',
@@ -111,10 +129,10 @@ export const InfoContainer = styled('div', {
         flexDirection: 'row',
 
         p: {
-            color: '$blue100',
-            fontWeight: '500'
-        }
-      }
+          color: '$blue100',
+          fontWeight: '500',
+        },
+      },
     },
 
     '&:first-child': {
@@ -129,9 +147,9 @@ export const InfoContainer = styled('div', {
       alignItems: 'center',
       justifyContent: 'flex-start',
       fontSize: '0.875rem',
-      color: '$blue100'
+      color: '$blue100',
     },
-  }
+  },
 })
 
 export const Heading = styled('h1', {

@@ -19,7 +19,7 @@ export function GameCard({
   visitorTeamLogo,
 }: GameCardProps) {
   return (
-    <GameCardContainer href="#">
+    <GameCardContainer href="/match/971799">
       <header>
         <h5>{league}</h5>
       </header>
