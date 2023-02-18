@@ -17,8 +17,8 @@ export const globalStyle = globalCss({
   body: {
     fontFamily: 'Lexend, Helvetica, sans-serif',
     color: '$black800',
-    overflowX: 'hidden',
-    overflowY: 'scroll',
+    // overflowX: 'hidden',
+    // overflowY: 'scroll',
     minHeight: '100vh',
   },
 

@@ -726,3 +726,480 @@ export const statistics: StatisticsProps[] = [
     ],
   },
 ]
+
+///////////////////////////////////////////////////
+
+export const lineUp = [
+  {
+    team: {
+      id: 165,
+      name: 'Borussia Dortmund',
+      logo: 'https://media.api-sports.io/football/teams/165.png',
+      colors: {
+        player: {
+          primary: 'ffff00',
+          number: '000000',
+          border: 'ffff00',
+        },
+        goalkeeper: {
+          primary: 'ff9900',
+          number: '000000',
+          border: 'ff9900',
+        },
+      },
+    },
+    coach: {
+      id: 13491,
+      name: 'E. Terzić',
+      photo: 'https://media-3.api-sports.io/football/coachs/13491.png',
+    },
+    formation: '4-1-4-1',
+    startXI: [
+      {
+        player: {
+          id: 25282,
+          name: 'G. Kobel',
+          number: 1,
+          pos: 'G',
+          grid: '1:1',
+        },
+      },
+      {
+        player: {
+          id: 26,
+          name: 'M. Wolf',
+          number: 17,
+          pos: 'D',
+          grid: '2:4',
+        },
+      },
+      {
+        player: {
+          id: 506,
+          name: 'N. Süle',
+          number: 25,
+          pos: 'D',
+          grid: '2:3',
+        },
+      },
+      {
+        player: {
+          id: 26243,
+          name: 'N. Schlotterbeck',
+          number: 4,
+          pos: 'D',
+          grid: '2:2',
+        },
+      },
+      {
+        player: {
+          id: 8,
+          name: 'Raphaël Guerreiro',
+          number: 13,
+          pos: 'D',
+          grid: '2:1',
+        },
+      },
+      {
+        player: {
+          id: 864,
+          name: 'E. Can',
+          number: 23,
+          pos: 'M',
+          grid: '3:1',
+        },
+      },
+      {
+        player: {
+          id: 984,
+          name: 'J. Brandt',
+          number: 19,
+          pos: 'M',
+          grid: '4:4',
+        },
+      },
+      {
+        player: {
+          id: 129718,
+          name: 'J. Bellingham',
+          number: 22,
+          pos: 'M',
+          grid: '4:3',
+        },
+      },
+      {
+        player: {
+          id: 24807,
+          name: 'S. Özcan',
+          number: 6,
+          pos: 'M',
+          grid: '4:2',
+        },
+      },
+      {
+        player: {
+          id: 7334,
+          name: 'K. Adeyemi',
+          number: 27,
+          pos: 'M',
+          grid: '4:1',
+        },
+      },
+      {
+        player: {
+          id: 1826,
+          name: 'S. Haller',
+          number: 9,
+          pos: 'F',
+          grid: '5:1',
+        },
+      },
+    ],
+    substitutes: [
+      {
+        player: {
+          id: 24811,
+          name: 'A. Modeste',
+          number: 20,
+          pos: 'F',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 24845,
+          name: 'J. Ryerson',
+          number: 26,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 286894,
+          name: 'J. Bynoe-Gittens',
+          number: 43,
+          pos: 'F',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 324957,
+          name: 'T. Rothe',
+          number: 36,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 264,
+          name: 'T. Meunier',
+          number: 24,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 162568,
+          name: 'S. Coulibaly',
+          number: 44,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 14,
+          name: 'M. Dahoud',
+          number: 8,
+          pos: 'M',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 249,
+          name: 'D. Malen',
+          number: 21,
+          pos: 'F',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 501,
+          name: 'M. Hummels',
+          number: 15,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 161921,
+          name: 'G. Reyna',
+          number: 7,
+          pos: 'M',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 26292,
+          name: 'A. Meyer',
+          number: 33,
+          pos: 'G',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 25,
+          name: 'M. Reus',
+          number: 11,
+          pos: 'M',
+          grid: null,
+        },
+      },
+    ],
+  },
+  {
+    team: {
+      id: 49,
+      name: 'Chelsea',
+      logo: 'https://media-3.api-sports.io/football/teams/49.png',
+      colors: {
+        player: {
+          primary: '1532c1',
+          number: 'ffffff',
+          border: '1532c1',
+        },
+        goalkeeper: {
+          primary: 'e3e3e3',
+          number: '000000',
+          border: 'e3e3e3',
+        },
+      },
+    },
+    coach: {
+      id: 12,
+      name: 'G. Potter',
+      photo: 'https://media.api-sports.io/football/coachs/12.png',
+    },
+    formation: '4-2-3-1',
+    startXI: [
+      {
+        player: {
+          id: 2273,
+          name: 'Kepa',
+          number: 1,
+          pos: 'G',
+          grid: '1:1',
+        },
+      },
+      {
+        player: {
+          id: 19545,
+          name: 'R. James',
+          number: 24,
+          pos: 'D',
+          grid: '2:4',
+        },
+      },
+      {
+        player: {
+          id: 259,
+          name: 'Thiago Silva',
+          number: 6,
+          pos: 'D',
+          grid: '2:3',
+        },
+      },
+      {
+        player: {
+          id: 318,
+          name: 'K. Koulibaly',
+          number: 26,
+          pos: 'D',
+          grid: '2:2',
+        },
+      },
+      {
+        player: {
+          id: 2933,
+          name: 'B. Chilwell',
+          number: 21,
+          pos: 'D',
+          grid: '2:1',
+        },
+      },
+      {
+        player: {
+          id: 2292,
+          name: 'R. Loftus-Cheek',
+          number: 12,
+          pos: 'M',
+          grid: '3:2',
+        },
+      },
+      {
+        player: {
+          id: 5996,
+          name: 'E. Fernández',
+          number: 5,
+          pos: 'M',
+          grid: '3:1',
+        },
+      },
+      {
+        player: {
+          id: 548,
+          name: 'H. Ziyech',
+          number: 22,
+          pos: 'M',
+          grid: '4:3',
+        },
+      },
+      {
+        player: {
+          id: 583,
+          name: 'João Félix',
+          number: 11,
+          pos: 'M',
+          grid: '4:2',
+        },
+      },
+      {
+        player: {
+          id: 63577,
+          name: 'M. Mudryk',
+          number: 15,
+          pos: 'M',
+          grid: '4:1',
+        },
+      },
+      {
+        player: {
+          id: 978,
+          name: 'K. Havertz',
+          number: 29,
+          pos: 'F',
+          grid: '5:1',
+        },
+      },
+    ],
+    substitutes: [
+      {
+        player: {
+          id: 19220,
+          name: 'M. Mount',
+          number: 19,
+          pos: 'M',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 47380,
+          name: 'Marc Cucurella',
+          number: 32,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 152955,
+          name: 'L. Bergström',
+          number: 47,
+          pos: 'G',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 284492,
+          name: 'L. Hall',
+          number: 67,
+          pos: 'M',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 2291,
+          name: 'M. Kovačić',
+          number: 8,
+          pos: 'M',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 22094,
+          name: 'W. Fofana',
+          number: 33,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 19720,
+          name: 'T. Chalobah',
+          number: 14,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 2810,
+          name: 'D. Zakaria',
+          number: 20,
+          pos: 'M',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 67972,
+          name: 'C. Gallagher',
+          number: 23,
+          pos: 'M',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 138935,
+          name: 'C. Chukwuemeka',
+          number: 30,
+          pos: 'M',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 2280,
+          name: 'César Azpilicueta',
+          number: 28,
+          pos: 'D',
+          grid: null,
+        },
+      },
+      {
+        player: {
+          id: 19012,
+          name: 'M. Bettinelli',
+          number: 13,
+          pos: 'G',
+          grid: null,
+        },
+      },
+    ],
+  },
+]

@@ -44,3 +44,31 @@ export function useScrollDirection() {
 
   return { scrollDirection, isVisible }
 }
+
+export function useScrollDirectionPage() {
+  const [scrollDirection] = useState('up')
+  const [isVisible, setIsVisible] = useState(true)
+
+  useEffect(() => {
+    const listenToScroll = () => {
+      let heightToHideFrom = 400
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop
+
+      if (winScroll > heightToHideFrom) {
+        isVisible && 
+          setIsVisible(false)
+      } else {
+        setIsVisible(true)
+      }
+    }
+
+    window.addEventListener('scroll', listenToScroll)
+
+    return () => {
+      window.removeEventListener('scroll', listenToScroll)
+    }
+  }, [scrollDirection, isVisible])
+
+  return { scrollDirection, isVisible }
+}

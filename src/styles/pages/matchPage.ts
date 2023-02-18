@@ -5,6 +5,92 @@ export const Container = styled('div', {
   backgroundColor: 'rgba(0,18,118,1)',
 })
 
+export const StickyHeader = styled('section', {
+  position: 'fixed',
+  top: '-70px',
+  right: 0,
+  left: 0,
+  width: '100%',
+  display: 'flex',
+  justifyContent: 'center',
+  backgroundColor: '#fff',
+  zIndex: 100,
+  borderBottom: '1px solid $gray100',
+  borderTop: '3px solid $blue500',
+  padding: '0.75rem 0',
+  transition: 'all 300ms cubic-bezier(0,.5,.58,1)',
+
+  img: {
+    width: '2.5rem',
+    height: '2.5rem',
+    objectFit: 'contain',
+  },
+
+  h1: {
+    color: '$blue900',
+  },
+
+  div: {
+    '&:not(:nth-child(2))': {
+      width: '80%',
+    },
+
+    '&:first-child': {
+      a: {
+        justifyContent: 'flex-end',
+      },
+    },
+
+    '&:nth-child(2)': {
+      width: '12rem',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      margin: '0 1rem',
+      border: '1px solid $gray100',
+      position: 'relative',
+
+      span: {
+        textAlign: 'center',
+        fontSize: '0.875rem',
+        lineHeight: '1.1',
+      },
+
+      p: {
+        fontSize: '0.75rem',
+        position: 'absolute',
+        top: '-7px',
+        fontWeight: '600',
+        color: '#fff',
+        padding: '0 5px',
+        backgroundColor: '$blue500'
+      }
+    },
+
+    a: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '1rem',
+
+      h2: {
+        fontSize: '1rem',
+        fontWeight: '600',
+        color: '$black500',
+        textTransform: 'uppercase',
+      },
+    },
+  },
+
+  '&.hide': {
+    marginTop: '0',
+  },
+
+  '&.show': {
+    marginTop: '70px',
+  },
+})
+
 export const Main = styled('main', {
   maxWidth: '1280px',
   width: '100%',
@@ -90,7 +176,7 @@ export const ScorerContainer = styled('div', {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      border: '2px solid $blue200',
+      // border: '2px solid $blue200',
       textAlign: 'center',
 
       span: {
@@ -180,15 +266,30 @@ export const Heading = styled('h1', {
 
 export const DetailsContainer = styled('aside', {
   div: {
-    borderLeft: '3px solid $blue100',
-    backgroundColor: '$blue500',
+    border: '1px solid $gray100',
     padding: '1rem 1rem 0.5rem',
-    color: '#fff',
+
+    header: {
+      display: 'flex',
+      alignItems: 'center',
+      marginBottom: '1rem',
+      gap: '0.5rem',
+
+      h3: {
+        fontWeight: '600',
+      },
+
+      img: {
+        width: '2.5rem',
+        height: '2.5rem',
+        objectFit: 'contain',
+      }
+    }
   },
 
   h4: {
     fontWeight: '500',
-    color: '$blue100',
+    color: '$blue500',
     fontSize: '0.875rem',
   },
 
@@ -268,9 +369,19 @@ export const StatisticContainer = styled('div', {
 
     '.home': {
       backgroundColor: '$blue900',
+      flex: 1,
     },
     '.away': {
       backgroundColor: '$blue200',
     },
   },
+})
+
+export const LineUpContainer = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
+
+  div: {
+    width: '100%',
+  }
 })
