@@ -1,4 +1,5 @@
 import { styled } from 'stitches.config'
+import { MainContainer } from './homepage'
 
 export const Container = styled('div', {
   backgroundColor: 'rgba(0,18,118,1)',
@@ -88,8 +89,8 @@ export const ScorerContainer = styled('div', {
 
       span: {
         fontWeight: '500',
-        fontSize: '20px'
-      }
+        fontSize: '20px',
+      },
     },
 
     h1: {
@@ -107,6 +108,12 @@ export const ScorerContainer = styled('div', {
       objectFit: 'contain',
     },
   },
+})
+
+export const GridContainer = styled(MainContainer, {
+  display: 'grid',
+  gridTemplateColumns: '2fr 1fr',
+  gap: '2rem',
 })
 
 export const InfoContainer = styled('div', {
@@ -157,6 +164,77 @@ export const Heading = styled('h1', {
   fontWeight: '600',
   fontSize: '1.75rem',
   letterSpacing: '-1px',
-  // textTransform: 'uppercase',
-  // fontFamily: 'program-narrow, sans-serif',
+})
+
+export const DetailsContainer = styled('aside', {
+  backgroundColor: '$blue500',
+  padding: '1rem',
+  color: '#fff'
+})
+
+export const ContentGridContainer = styled('section', {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(2, 1fr)',
+  gap: '2rem'
+})
+
+export const TeamsContainer = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
+  margin: '1rem 0 2rem',
+
+  div: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+
+    img: {
+      width: '3rem',
+      height: '3rem',
+      objectFit: 'contain',
+    },
+
+    h3: {
+      fontWeight: '500',
+    },
+  },
+})
+
+export const StatisticContainer = styled('div', {
+  h3: {
+    fontWeight: '500',
+    fontSize: '1.125rem',
+    color: '$blue500',
+    textAlign: 'center',
+    marginBottom: '1rem'
+  },
+
+  section: {
+    display: 'flex',
+    justifyContent: 'space-between',
+
+    span: {
+      textTransform: 'uppercase',
+      fontFamily: 'program-narrow, sans-serif',
+      fontSize: '2rem',
+      fontWeight: '500',
+      color: '$blue900',
+    },
+    
+    h4: {
+      fontWeight: '500',
+    },
+
+    div: {
+      height: '5px',
+      display: 'inline-block',
+    },
+
+    '.home': {
+      backgroundColor: '$blue900',
+    },
+    '.away': {
+      backgroundColor: '$blue200',
+    },
+  },
 })

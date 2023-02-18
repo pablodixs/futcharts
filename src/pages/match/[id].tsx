@@ -1,3 +1,7 @@
+import Head from 'next/head'
+import * as Progress from '@radix-ui/react-progress'
+import { useRouter } from 'next/router'
+
 import { NewsSlider } from '@/components/NewsSilder'
 import { MainContainer } from '@/styles/pages/homepage'
 import {
@@ -9,14 +13,16 @@ import {
   HeaderContainer,
   Heading,
   LocalSpan,
+  TeamsContainer,
+  StatisticContainer,
+  GridContainer,
+  DetailsContainer,
+  ContentGridContainer,
 } from '@/styles/pages/matchPage'
-import { matches } from '@/utils/matchChampions'
+import { matches, statistics } from '@/utils/matchChampions'
 import { laliganews } from '@/utils/news'
 import { formatDate, formatTime } from '@/utils/timeFormat'
-import { format, formatDistanceToNow } from 'date-fns'
-import moment from 'moment'
-import { useRouter } from 'next/router'
-import { SoccerBall } from 'phosphor-react'
+import { StatisticBox } from '@/components/StatisticBox'
 
 export default function MatchPage() {
   const router = useRouter()
@@ -26,8 +32,24 @@ export default function MatchPage() {
 
   const data = matches.find((match) => match.fixture.id === idNumber)
 
+  const homeStats = statistics[0]
+  const awayStats = statistics[1]
+
+  const homeBallPoss = homeStats.statistics.find(
+    (stat) => stat.type === 'Ball Possession'
+  )
+  const awayBallPoss = awayStats.statistics.find(
+    (stat) => stat.type === 'Ball Possession'
+  )
+
   return (
     <>
+      <Head>
+        <title>
+          {data?.teams.home.name} x {data?.teams.away.name} -{' '}
+          {data?.league.name} | Futcharts
+        </title>
+      </Head>
       <Container>
         <Main>
           <HeaderContainer>
@@ -80,11 +102,52 @@ export default function MatchPage() {
           {/* <span>{formatDate()}</span> */}
         </Main>
       </Container>
-      <MainContainer>
-        <Heading>Detalhes da partida</Heading>
-        <span>Id: {id}</span>
-      </MainContainer>
-      <NewsSlider data={laliganews} />
+      <GridContainer>
+        <div>
+          <Heading>Estatísticas da partida</Heading>
+          <TeamsContainer>
+            <div>
+              <img src={data?.teams.home.logo} />
+              <h3>{data?.teams.home.name}</h3>
+            </div>
+            <div>
+              <h3>{data?.teams.away.name}</h3>
+              <img src={data?.teams.away.logo} />
+            </div>
+          </TeamsContainer>
+          <ContentGridContainer>
+            <StatisticContainer>
+              <h3>Posse de bola</h3>
+              <section>
+                <span>{homeBallPoss?.value}</span>
+                <span>{awayBallPoss?.value}</span>
+              </section>
+              <section>
+                <div
+                  className="home"
+                  style={{ width: homeBallPoss?.value! }}
+                ></div>
+                <div
+                  className="away"
+                  style={{ width: awayBallPoss?.value! }}
+                ></div>
+              </section>
+            </StatisticContainer>
+            {statistics?.map((stat, index) => {
+              return (
+                <StatisticBox
+                  data={stat}
+                  index={index}
+                />
+              )
+            })} 
+          </ContentGridContainer>
+        </div>
+        <DetailsContainer>
+          <span>Id: {id}</span>
+        </DetailsContainer>
+      </GridContainer>
+      {/* <NewsSlider data={laliganews} /> */}
     </>
   )
 }

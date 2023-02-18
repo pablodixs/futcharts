@@ -13,7 +13,7 @@ export const HeroContainer = styled('section', {
 export const MainContainer = styled('main', {
   maxWidth: '1280px',
   width: '100%',
-  margin: '2rem auto'
+  margin: '2rem auto',
 })
 
 export const BackItem = styled('div', {
