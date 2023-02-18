@@ -25,7 +25,7 @@ import { formatDate, formatTime } from '@/utils/timeFormat'
 import { StatisticBox } from '@/components/StatisticBox'
 import { format } from 'date-fns'
 
-export default function MatchPage() {
+export default function TeamPage() {
   const router = useRouter()
   const { id } = router.query
 
@@ -59,13 +59,11 @@ export default function MatchPage() {
           </HeaderContainer>
           <ScorerContainer>
             <div>
-              <a href={`/team/${data?.teams.home.id}`}>
-                <h2>{data?.teams.home.name}</h2>
-                <img
-                  src={data?.teams.home.logo}
-                  alt={`Escudo ${data?.teams.home.name}`}
-                />
-              </a>
+              <h2>{data?.teams.home.name}</h2>
+              <img
+                src={data?.teams.home.logo}
+                alt={`Escudo ${data?.teams.home.name}`}
+              />
             </div>
             <div>
               {data?.score.fulltime.away === null ? (
@@ -77,13 +75,11 @@ export default function MatchPage() {
               )}
             </div>
             <div>
-              <a href={`/team/${data?.teams.away.id}`}>
-                <img
-                  src={data?.teams.away.logo}
-                  alt={`Escudo ${data?.teams.away.name}`}
-                />
-                <h2>{data?.teams.away.name}</h2>
-              </a>
+              <img
+                src={data?.teams.away.logo}
+                alt={`Escudo ${data?.teams.away.name}`}
+              />
+              <h2>{data?.teams.away.name}</h2>
             </div>
           </ScorerContainer>
           <InfoContainer>

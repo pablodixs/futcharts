@@ -8,10 +8,13 @@ export function formatTime(time: number | string | Date) {
   return formated
 }
 
-export function formatDate(date?: number | string) {
-  // const dateFor = new Date(date)
-  const dateFor = new Date('2023-03-15T20:00:00+00:00')
-  const formated = format(dateFor, "eeee',' dd 'de' MMMM 'de' yyyy '-' HH':'mm", { locale: ptBR })
+export function formatDate(date: number | string) {
+  if(date === undefined) {
+    return
+  }
+  
+  const dateFor = new Date(date)
+  const formated = format(dateFor, "eeee',' dd 'de' MMMM 'de' yyyy '-' HH'h'mm", { locale: ptBR })
 
   return formated
 }

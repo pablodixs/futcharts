@@ -67,6 +67,12 @@ export const ScorerContainer = styled('div', {
     alignItems: 'center',
     gap: '1rem',
 
+    a: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '1rem',
+    },
+
     '&:not(:nth-child(2))': {
       width: '50%',
     },
@@ -114,6 +120,11 @@ export const GridContainer = styled(MainContainer, {
   display: 'grid',
   gridTemplateColumns: '2fr 1fr',
   gap: '2rem',
+
+  h1: {
+    textAlign: 'center',
+    letterSpacing: '-1px',
+  },
 })
 
 export const InfoContainer = styled('div', {
@@ -164,18 +175,33 @@ export const Heading = styled('h1', {
   fontWeight: '600',
   fontSize: '1.75rem',
   letterSpacing: '-1px',
+  textAlign: 'center',
 })
 
 export const DetailsContainer = styled('aside', {
-  backgroundColor: '$blue500',
-  padding: '1rem',
-  color: '#fff'
+  div: {
+    borderLeft: '3px solid $blue100',
+    backgroundColor: '$blue500',
+    padding: '1rem 1rem 0.5rem',
+    color: '#fff',
+  },
+
+  h4: {
+    fontWeight: '500',
+    color: '$blue100',
+    fontSize: '0.875rem',
+  },
+
+  span: {
+    display: 'block',
+    marginBottom: '1rem',
+  },
 })
 
 export const ContentGridContainer = styled('section', {
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',
-  gap: '2rem'
+  gap: '3rem',
 })
 
 export const TeamsContainer = styled('div', {
@@ -189,8 +215,8 @@ export const TeamsContainer = styled('div', {
     gap: '0.5rem',
 
     img: {
-      width: '3rem',
-      height: '3rem',
+      width: '2.5rem',
+      height: '2.5rem',
       objectFit: 'contain',
     },
 
@@ -201,17 +227,21 @@ export const TeamsContainer = styled('div', {
 })
 
 export const StatisticContainer = styled('div', {
+  marginBottom: '2rem',
+
   h3: {
     fontWeight: '500',
     fontSize: '1.125rem',
     color: '$blue500',
     textAlign: 'center',
-    marginBottom: '1rem'
+    marginBottom: '1rem',
   },
 
   section: {
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems: 'center',
+    position: 'relative',
 
     span: {
       textTransform: 'uppercase',
@@ -220,9 +250,15 @@ export const StatisticContainer = styled('div', {
       fontWeight: '500',
       color: '$blue900',
     },
-    
+
     h4: {
       fontWeight: '500',
+      fontSize: '0.875rem',
+      color: '$black100',
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
     },
 
     div: {
