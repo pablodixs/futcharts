@@ -14,7 +14,18 @@ export function formatDate(date: number | string) {
   }
   
   const dateFor = new Date(date)
-  const formated = format(dateFor, "eeee',' dd 'de' MMMM 'de' yyyy '-' HH'h'mm", { locale: ptBR })
+  const formated = format(dateFor, "eee',' dd 'de' MMMM 'de' yyyy '-' HH'h'mm", { locale: ptBR })
+
+  return formated
+}
+
+export function formatDateCompact(date: number | string) {
+  if(date === undefined) {
+    return
+  }
+  
+  const dateFor = new Date(date)
+  const formated = format(dateFor, "EEEEEE dd LLL yyyy", { locale: ptBR })
 
   return formated
 }

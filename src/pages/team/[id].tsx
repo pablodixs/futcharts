@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import * as Progress from '@radix-ui/react-progress'
 import { useRouter } from 'next/router'
 
-import { NewsSlider } from '@/components/NewsSilder'
-import { MainContainer } from '@/styles/pages/homepage'
 import {
   Main,
   Container,
@@ -20,10 +17,7 @@ import {
   ContentGridContainer,
 } from '@/styles/pages/matchPage'
 import { matches, statistics } from '@/utils/matchChampions'
-import { laliganews } from '@/utils/news'
 import { formatDate, formatTime } from '@/utils/timeFormat'
-import { StatisticBox } from '@/components/StatisticBox'
-import { format } from 'date-fns'
 
 export default function TeamPage() {
   const router = useRouter()
