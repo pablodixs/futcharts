@@ -10,7 +10,7 @@ interface NewsCardProps {
 export function NewsCardRegular({ imageUrl, title, press }: NewsCardProps) {
   return (
       <CardContainer>
-        <Image src={imageUrl} alt="" />
+        <img src={imageUrl} alt="" />
         <span>{press}</span>
         <h3>{title}</h3>
       </CardContainer>

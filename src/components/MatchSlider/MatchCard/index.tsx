@@ -16,11 +16,11 @@ export function MatchCard({ data }: MatchCardProps) {
       <main>
         <div>
           <span>{data?.mandante}</span>
-          <Image src={data?.mandanteLogo} alt="" />
+          <img src={data?.mandanteLogo} alt="" />
         </div>
         <Horario>{data?.hora}</Horario>
         <div>
-          <Image src={data?.visitanteLogo} alt="" />
+          <img src={data?.visitanteLogo} alt="" />
           <span>{data?.visitante}</span>
         </div>
       </main>

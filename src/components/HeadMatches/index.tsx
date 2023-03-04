@@ -19,7 +19,7 @@ export function HeadMatches({ match }: HeadToHeadProps) {
         <section>
           <div>
             <span>{match.teams.home.name}</span>
-            <Image src={match.teams.home.logo} alt='' />
+            <img src={match.teams.home.logo} alt='' />
           </div>
           <div>
             <h3>
@@ -27,7 +27,7 @@ export function HeadMatches({ match }: HeadToHeadProps) {
             </h3>
           </div>
           <div>
-            <Image src={match.teams.away.logo} alt='' />
+            <img src={match.teams.away.logo} alt='' />
             <span>{match.teams.away.name}</span>
           </div>
         </section>
