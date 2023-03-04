@@ -327,10 +327,11 @@ export const DetailsContainer = styled('aside', {
   },
 })
 
-export const ContentGridContainer = styled('section', {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(2, 1fr)',
-  gap: '3rem',
+export const ContentContainer = styled('section', {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'column',
 })
 
 export const TeamsContainer = styled('div', {
@@ -488,7 +489,7 @@ export const Head2HeadFixture = styled('section', {
       img: {
         width: '2.5rem',
         height: '2.5rem',
-        objectFit: 'contain',
+        objectFit: 'contain', 
       },
     },
   },
@@ -496,6 +497,7 @@ export const Head2HeadFixture = styled('section', {
 
 export const StatisticContainer = styled('div', {
   marginBottom: '2rem',
+  width: '70%',
 
   h3: {
     fontWeight: '500',

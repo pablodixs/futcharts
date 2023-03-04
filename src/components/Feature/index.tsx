@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowUpRight } from 'phosphor-react'
 import { motion } from 'framer-motion'
 
@@ -39,7 +40,7 @@ export function Feature() {
           <LastButton>
             <span>
               {/* <ArrowUpRight weight='regular' />  */}
-              <img
+              <Image
                 src="https://img.uefa.com/imgml/uefacom/ucl/2021/logos/logotype_dark.svg"
                 alt=""
               />

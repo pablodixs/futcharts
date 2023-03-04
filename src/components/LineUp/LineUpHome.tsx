@@ -15,7 +15,7 @@ export function LineUpHome({ data }: LineUpProps) {
         </HeaderHome>
         {data.startXI.map((player: any) => {
           return (
-            <PlayerHomeContainer>
+            <PlayerHomeContainer key={player.player.id}>
               <h2>{player.player.number}</h2>
               <span>{player.player.name}</span>
             </PlayerHomeContainer>

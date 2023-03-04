@@ -15,7 +15,7 @@ export function LineUpAway({ data }: LineUpProps) {
         </HeaderAway>
         {data.startXI.map((player: any) => {
           return (
-            <PlayerAwayContainer>
+            <PlayerAwayContainer key={player.player.id}>
               <span>{player.player.name}</span>
               <h2>
                 {player.player.number}

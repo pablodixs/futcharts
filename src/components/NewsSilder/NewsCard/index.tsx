@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { CardContainer } from './styles'
 
 interface NewsCardProps {
@@ -10,7 +10,7 @@ interface NewsCardProps {
 export function NewsCardRegular({ imageUrl, title, press }: NewsCardProps) {
   return (
       <CardContainer>
-        <img src={imageUrl} alt="" />
+        <Image src={imageUrl} alt="" />
         <span>{press}</span>
         <h3>{title}</h3>
       </CardContainer>

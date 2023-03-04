@@ -1,4 +1,5 @@
 import { MatchProps } from '@/utils/matches'
+import Image from 'next/image'
 import { ArrowRight } from 'phosphor-react'
 import { Horario, MatchCardContainer } from './styles'
 
@@ -15,11 +16,11 @@ export function MatchCard({ data }: MatchCardProps) {
       <main>
         <div>
           <span>{data?.mandante}</span>
-          <img src={data?.mandanteLogo} alt="" />
+          <Image src={data?.mandanteLogo} alt="" />
         </div>
         <Horario>{data?.hora}</Horario>
         <div>
-          <img src={data?.visitanteLogo} alt="" />
+          <Image src={data?.visitanteLogo} alt="" />
           <span>{data?.visitante}</span>
         </div>
       </main>

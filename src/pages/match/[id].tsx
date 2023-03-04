@@ -16,7 +16,6 @@ import {
   StatisticContainer,
   GridContainer,
   DetailsContainer,
-  ContentGridContainer,
   StickyHeader,
   LineUpContainer,
   TabsList,
@@ -30,6 +29,7 @@ import {
   SubstitutionContainer,
   GoalContainer,
   EventsContainer,
+  ContentContainer,
 } from '@/styles/pages/matchPage'
 import {
   headToChelsea,
@@ -252,7 +252,7 @@ export default function MatchPage() {
               <Heading>Match Centre</Heading>
               <TeamsContainer>
                 <div>
-                  <img src={data?.teams.home.logo} />
+                  <img src={data?.teams.home.logo} alt=''/>
                   <h3>{data?.teams.home.name}</h3>
                 </div>
                 <div>
@@ -275,7 +275,7 @@ export default function MatchPage() {
                           <EventContainer key={index}>
                             <div>
                               <span>
-                                {event.time.elapsed}' {event.time.extra}
+                                {event.time.elapsed}&apos; {event.time.extra}
                               </span>
                             </div>
                             <section>
@@ -311,7 +311,7 @@ export default function MatchPage() {
                     </EventsContainer>
                   </Tabs.Content>
                   <Tabs.Content value="statistics">
-                    <ContentGridContainer>
+                    <ContentContainer>
                       <StatisticContainer>
                         <h3>Posse de bola</h3>
                         <section>
@@ -413,7 +413,7 @@ export default function MatchPage() {
                           <div
                             className="away"
                             style={{ flex: awayStats.statistics[4].value! }}
-                          ></div>
+                          ></div> 
                         </section>
                       </StatisticContainer>
                       <StatisticContainer>
@@ -550,7 +550,7 @@ export default function MatchPage() {
                         </section>
                         <section></section>
                       </StatisticContainer>
-                    </ContentGridContainer>
+                    </ContentContainer>
                   </Tabs.Content>
                   <Tabs.Content value="lineup">
                     <div>

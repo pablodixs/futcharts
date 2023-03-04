@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Input, LinkContainer } from '@/styles/global'
 import { Logo } from '../Logo'
 import { Navbar } from './Navbar'
+import { StickyNav } from './StickyNav'
 import {
   Avatar,
   Container,
@@ -13,8 +14,8 @@ import {
   UserContainer,
 } from './styles'
 
+
 import avatar from '../../assets/avatar.jpeg'
-import { StickyNav } from './StickyNav'
 
 export function Header() {
   return (
@@ -28,7 +29,7 @@ export function Header() {
           <Navbar />
           <SearchBarContainer>
             <Input placeholder="Buscar" />
-            <SearchButton>
+            <SearchButton>  
               <MagnifyingGlass weight="bold" />
             </SearchButton>
           </SearchBarContainer>

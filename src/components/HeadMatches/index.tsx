@@ -1,5 +1,6 @@
 import { ButtonLink } from '@/styles/pages/matchPage'
 import { formatDateCompact } from '@/utils/timeFormat'
+import Image from 'next/image'
 import { ArrowRight } from 'phosphor-react'
 import { Head2HeadFixture } from './styles'
 
@@ -18,7 +19,7 @@ export function HeadMatches({ match }: HeadToHeadProps) {
         <section>
           <div>
             <span>{match.teams.home.name}</span>
-            <img src={match.teams.home.logo} />
+            <Image src={match.teams.home.logo} alt='' />
           </div>
           <div>
             <h3>
@@ -26,7 +27,7 @@ export function HeadMatches({ match }: HeadToHeadProps) {
             </h3>
           </div>
           <div>
-            <img src={match.teams.away.logo} />
+            <Image src={match.teams.away.logo} alt='' />
             <span>{match.teams.away.name}</span>
           </div>
         </section>
